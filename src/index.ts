@@ -1,4 +1,4 @@
-export const helloWorld = (message: string) => {
+export const helloWorld = (message: string): void => {
     console.log(`${message} says Hi!`);
 };
 

@@ -1,11 +1,11 @@
 import { helloWorld } from '../src/index';
 
 describe('HelloWorld', () => {
-    test("should greet", () => {
+    test('should greet', () => {
         console.log = jest.fn();
-        
-        helloWorld("Chatbot");
 
-        expect(console.log).toHaveBeenCalledWith("Chatbot says Hi!");
-    })
+        helloWorld('Chatbot');
+
+        expect(console.log).toHaveBeenCalledWith('Chatbot says Hi!');
+    });
 });
