@@ -5,17 +5,17 @@
 First install dependencies:
 
 ```
-npm install
+yarn install
 ```
 
 To run app locally:
 
 ```
-npm start
+yarn start
 ```
 
 To create a production build:
 
 ```
-npm run build
+yarn build
 ```

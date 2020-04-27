@@ -7,7 +7,7 @@
     "scripts": {
         "clean": "rm -rf dist .cache",
         "start": "parcel src/index.html",
-        "build": "npm run clean && parcel build src/index.html",
+        "build": "yarn clean && parcel build src/index.html",
         "lint": "prettier --write src/**/*.{ts,html,css}"
     },
     "devDependencies": {
