@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.ts"],"names":[],"mappings":";AAIA,aAAA,OAAA,eAAA,QAAA,aAAA,CAAA,OAAA,IAAA,QAAA,gBAAA,EAJa,QAAA,WAAa,SAAC,GACvB,QAAQ,IAAO,EAAO,cAG1B,QAAA,WAAW","file":"src.d22d012c.js","sourceRoot":"../src","sourcesContent":["export const helloWorld = (message: string): void => {\n    console.log(`${message} says Hi!`);\n};\n\nhelloWorld('Chatbot');\n"]}
