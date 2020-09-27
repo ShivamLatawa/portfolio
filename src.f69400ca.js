@@ -34269,6 +34269,7 @@ var cv_png_1 = __importDefault(require("../../../assets/cv.png"));
 
 var About = function About() {
   return React.createElement(StyledContent, null, React.createElement("img", {
+    width: "100%",
     src: cv_png_1.default,
     alt: "Resume"
   }));
