@@ -9,7 +9,7 @@ const theme = {
 };
 
 interface IProps {
-    children: JSX.Element[];
+    children: JSX.Element;
 }
 
 const Theme = (props: IProps) => <ThemeProvider theme={theme}>{props.children}</ThemeProvider>;

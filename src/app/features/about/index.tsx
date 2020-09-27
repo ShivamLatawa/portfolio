@@ -2,11 +2,15 @@ import * as React from 'react';
 import styled from 'styled-components';
 import cv from '../../../assets/cv.png';
 
-const Home = () => {
-    return <StyledContent>Home works!</StyledContent>;
+const About = () => {
+    return (
+        <StyledContent>
+            <img src={cv} alt="Resume" />
+        </StyledContent>
+    );
 };
 
-export default Home;
+export default About;
 
 const StyledContent = styled.div`
     display: flex;
