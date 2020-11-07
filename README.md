@@ -1,4 +1,4 @@
-# ChatBot
+# ChatBot Demo
 
 ## Building and running on localhost
 
