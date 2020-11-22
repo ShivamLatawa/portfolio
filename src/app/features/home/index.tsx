@@ -66,10 +66,10 @@ const Home = () => {
                 <StyledText>
                     Hey, I'm <StyledSpan>Shivam.</StyledSpan>
                 </StyledText>
-                <StyledParagraph>A self motivated, front-end engineer wih 6 years of web development experience, specialising in UI with a keen interest in full-stack development.</StyledParagraph>
+                <StyledParagraph>A self motivated, front-end engineer with 6 years of web development experience, specialising in UI with a keen interest in full-stack development.</StyledParagraph>
             </StyledContent>
             <div>
-                <img src={profile} alt="Shivam's image"/>
+                <StyledImg src={profile} alt="Shivam's image"/>
             </div> 
         </StyledWrapper>
     );
@@ -79,13 +79,27 @@ export default Home;
 
 const StyledWrapper = styled.div`
     display: flex;
-    margin: 8rem;
+    margin-top: 4rem;
     justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media (max-width: 1024px) {
+        margin-top: 1rem;
+    }
 `;
 const StyledContent = styled.div`
-    display: flex;
-    flex-direction: column;
-    max-width: 40%
+    width: 50%;
+
+    @media (max-width: 1024px) {
+        width: 100%;
+    }
+`;
+
+const StyledImg = styled.img`
+    @media (max-width: 768px) {
+        height: 63%;
+        margin-top: 3rem;
+    }
 `;
 const StyledSpan = styled.span`
     color: #e31b6d;
@@ -94,6 +108,10 @@ const StyledText = styled.h1`
     color: ${(props) => props.theme.colors.white};
     font-size: 3.5rem;
     font-weight: 400;
+
+    @media (max-width: 768px) {
+        font-size: 2.5rem;
+    }
 `;
 const StyledParagraph = styled.p`
     font-size: 2rem;

@@ -42,6 +42,10 @@ const StyledNav = styled.nav``;
 
 const StyledHeader = styled.h1`
     font-weight: 400;
+
+    @media (max-width: 768px) {
+        font-size: 1.5rem;
+    }
 `;
 
 const StyledLink = styled(Link)`
