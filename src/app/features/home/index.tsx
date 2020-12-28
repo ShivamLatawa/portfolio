@@ -42,12 +42,14 @@ const StyledContent = styled.div`
 const StyledImg = styled.img`
     max-width: 50%;
     max-height: 50%;
-    width: auto;
-    height: auto;
+    width: 50%;
+    height: 50%;
 
     @media (max-width: 1024px) {
         max-width: 100%;
         max-height: 100%;
+        width: 100%;
+        height: 100%;
         margin-top: 3rem;
     }
 `;
