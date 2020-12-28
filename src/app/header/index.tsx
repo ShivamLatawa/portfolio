@@ -15,7 +15,7 @@ const Header = () => {
 
                 <StyledNav>
                     <StyledList>
-                        <StyledLink to="/home" activeClassName="active">
+                        <StyledLink to="/home" exact activeClassName="active">
                             <StyledListElement>Home</StyledListElement>
                         </StyledLink>
                         <StyledLink to="/about" activeClassName="active">
