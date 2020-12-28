@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 /**
@@ -15,10 +15,10 @@ const Header = () => {
 
                 <StyledNav>
                     <StyledList>
-                        <StyledLink to="/home">
+                        <StyledLink to="/home" activeClassName="active">
                             <StyledListElement>Home</StyledListElement>
                         </StyledLink>
-                        <StyledLink to="/about">
+                        <StyledLink to="/about" activeClassName="active">
                             <StyledListElement>About</StyledListElement>
                         </StyledLink>
                     </StyledList>
@@ -48,8 +48,13 @@ const StyledHeader = styled.h1`
     }
 `;
 
-const StyledLink = styled(Link)`
+const StyledLink = styled(NavLink)`
     text-decoration: none;
+    padding: 10;
+
+    &.active {
+        border-bottom: 4px solid ${(props) => props.theme.colors.white};
+    }
 `;
 
 const StyledList = styled.ul`
@@ -58,7 +63,7 @@ const StyledList = styled.ul`
 
 const StyledListElement = styled.li`
     list-style: none;
-    margin-left: 30px;
+    padding: 10px 15px;
     font-size: 1.5rem;
     color: ${(props) => props.theme.colors.darkGrey};
 `;

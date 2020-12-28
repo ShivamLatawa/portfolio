@@ -1,76 +1,20 @@
-// import * as React from 'react';
-// import styled from 'styled-components';
-// import { scaleLinear } from 'd3';
-// // @ts-ignore
-// import { BarChart as BarChartLib } from 'react-d3-components';
-
-// const Home = () => {
-//     const data = [
-//         {
-//             label: '',
-//             values: [
-//                 { x: 'HTML', y: 80 },
-//                 { x: 'CSS', y: 80 },
-//                 { x: 'JS', y: 80 },
-//                 { x: 'React', y: 75 },
-//                 { x: 'Angular', y: 70 },
-//             ],
-//         },
-//     ];
-//     return (
-//         <StyledContent>
-//             <StyledText>
-//                 I'm <StyledSpan>Shivam Latawa</StyledSpan>
-//             </StyledText>
-//             <StyledParagraph>Front-end Engineer</StyledParagraph>
-//             <h2>Skills</h2>
-//             <BarChartLib
-//                 yScale={scaleLinear().domain([0, 100]).range([340, 0])}
-//                 data={data}
-//                 width={400}
-//                 height={400}
-//                 margin={{ top: 10, bottom: 50, left: 50, right: 10 }}
-//             />
-//         </StyledContent>
-//     );
-// };
-
-// export default Home;
-
-// const StyledContent = styled.div`
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-// `;
-// const StyledSpan = styled.span`
-//     color: #e31b6d;
-// `;
-// const StyledText = styled.h1`
-//     font-size: 30px;
-// `;
-// const StyledParagraph = styled.p`
-//     font-size: 24px;
-// `;
-
-
 import * as React from 'react';
 import styled from 'styled-components';
 import profile from '../../../assets/profile.jpg';
 
 const Home = () => {
-    
     return (
         <StyledWrapper>
             <StyledContent>
                 <StyledText>
                     Hey, I'm <StyledSpan>Shivam.</StyledSpan>
                 </StyledText>
-                <StyledParagraph>A self motivated, front-end engineer with 6 years of web development experience, specialising in UI with a keen interest in full-stack development.</StyledParagraph>
+                <StyledParagraph>
+                    A self motivated, front-end engineer with more than 6 years of web development experience,
+                    specialising in UI with a keen interest in full-stack development.
+                </StyledParagraph>
             </StyledContent>
-            <div>
-                <StyledImg src={profile} alt="Shivam's image"/>
-            </div> 
+            <StyledImg src={profile} alt="Shivam's image" />
         </StyledWrapper>
     );
 };
@@ -88,7 +32,7 @@ const StyledWrapper = styled.div`
     }
 `;
 const StyledContent = styled.div`
-    width: 50%;
+    width: 48%;
 
     @media (max-width: 1024px) {
         width: 100%;
@@ -96,8 +40,14 @@ const StyledContent = styled.div`
 `;
 
 const StyledImg = styled.img`
-    @media (max-width: 768px) {
-        height: 63%;
+    max-width: 50%;
+    max-height: 50%;
+    width: auto;
+    height: auto;
+
+    @media (max-width: 1024px) {
+        max-width: 100%;
+        max-height: 100%;
         margin-top: 3rem;
     }
 `;
@@ -109,7 +59,7 @@ const StyledText = styled.h1`
     font-size: 3.5rem;
     font-weight: 400;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
         font-size: 2.5rem;
     }
 `;
@@ -117,5 +67,4 @@ const StyledParagraph = styled.p`
     font-size: 2rem;
     line-height: 3rem;
     color: ${(props) => props.theme.colors.darkGrey};
-
 `;
