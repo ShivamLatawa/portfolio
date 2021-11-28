@@ -21,8 +21,8 @@ const Header = () => {
                         <StyledLink to="/about" activeClassName="active">
                             <StyledListElement>About</StyledListElement>
                         </StyledLink>
-                        <StyledLink to="/blog" activeClassName="active">
-                            <StyledListElement>Blog</StyledListElement>
+                        <StyledLink to="/blogs" activeClassName="active">
+                            <StyledListElement>Blogs</StyledListElement>
                         </StyledLink>
                     </StyledList>
                 </StyledNav>
