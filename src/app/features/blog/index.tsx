@@ -7,7 +7,6 @@ const Blog = () => {
             <StyledContent>
                 <StyledText>Welcome to the blogs!</StyledText>
                 <StyledParagraph>No blogs yet.</StyledParagraph>
-                <p>Upload image here:</p>
             </StyledContent>
         </StyledWrapper>
     );
