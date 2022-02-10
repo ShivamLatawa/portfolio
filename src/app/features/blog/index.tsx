@@ -8,7 +8,6 @@ const Blog = () => {
                 <StyledText>Welcome to the blogs!</StyledText>
                 <StyledParagraph>No blogs yet.</StyledParagraph>
                 <p>Upload image here:</p>
-                <input accept="image/*" id="icon-button-file" type="file" capture="environment"/>
             </StyledContent>
         </StyledWrapper>
     );
