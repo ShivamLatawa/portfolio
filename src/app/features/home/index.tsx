@@ -10,7 +10,7 @@ const Home = () => {
                     Hey, I'm <StyledSpan>Shivam.</StyledSpan>
                 </StyledText>
                 <StyledParagraph>
-                    Lead Frontend Engineer | Experienced in Designing Scalable and Robust Frontend Solutions for Seamless User Experiences | 9 years of overall experience.
+                    Lead Frontend Engineer/Engineering Manager | Experienced in Designing Scalable and Robust Frontend Solutions for Seamless User Experiences and Managing Teams | 10 years of overall experience.
                 </StyledParagraph>
             </StyledContent>
             <StyledImg src={profile} alt="Shivam's image" />
